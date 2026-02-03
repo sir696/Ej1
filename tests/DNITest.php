@@ -27,6 +27,8 @@ class DNITest extends TestCase
     public function getDNIConLetraTest()
     {
         $this->assertContains($this->dniSinLetra, $this->dniConLetra);
+        $this->assertNotEmpty($this->dniSinLetra);
+        $this->assertNotEmpty($this->dniConLetra);
         return $this->dniConLetra;
     }
 
