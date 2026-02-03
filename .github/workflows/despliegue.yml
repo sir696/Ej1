@@ -19,7 +19,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           HOST: ${{ secrets.HOST }}
-          $USERNAME: ${{ secrets.USERNAME }}
+          USERNAME: ${{ secrets.USERNAME }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run:
           mkdir -p ~/.ssh
