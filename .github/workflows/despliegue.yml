@@ -21,7 +21,7 @@ jobs:
           HOST: ${{ secrets.HOST }}
           $USERNAME: ${{ secrets.USERNAME }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-        run: |
+        run:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
